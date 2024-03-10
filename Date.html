@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>current date times</title>
+</head>
+<body>
+    <h1>Current date time in blow looking</h1>
+   <!--<button onclick="myFunction()">try it</button>-->
+    <p id="demo">sd</p>
+    <p id="Time">sd</p>
+    <script>
+        // var t = new Date().toLocaleTimeString();
+        // document.getElementById("Time").innerHTML=t;
+
+        // var d = new Date().toTimeString();
+        // document.getElementById("demo").innerHTML=d;
+
+
+        (function(){
+            setInterval(()=>{
+                var d =new Date().toLocaleString();
+                document.getElementById("demo").innerHTML=d;
+
+            },1000)
+            
+        }
+        )();
+    // </script>
+</body>
+</html>
